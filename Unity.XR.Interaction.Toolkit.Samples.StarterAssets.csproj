@@ -61,8 +61,8 @@
     <Compile Include="Assets\Samples\XR Interaction Toolkit\2.4.3\Starter Assets\Scripts\XRPokeFollowAffordance.cs" />
     <Compile Include="Assets\Samples\XR Interaction Toolkit\2.4.3\Starter Assets\Scripts\ActionBasedControllerManager.cs" />
     <Compile Include="Assets\Samples\XR Interaction Toolkit\2.4.3\Starter Assets\Scripts\DynamicMoveProvider.cs" />
-    <Compile Include="Assets\Samples\XR Interaction Toolkit\2.4.3\Starter Assets\Scripts\GazeInputManager.cs" />
     <Compile Include="Assets\Samples\XR Interaction Toolkit\2.4.3\Starter Assets\Scripts\PokeStation\IncrementUIText.cs" />
+    <Compile Include="Assets\Samples\XR Interaction Toolkit\2.4.3\Starter Assets\Scripts\GazeInputManager.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Samples\XR Interaction Toolkit\2.4.3\Starter Assets\Unity.XR.Interaction.Toolkit.Samples.StarterAssets.asmdef" />
