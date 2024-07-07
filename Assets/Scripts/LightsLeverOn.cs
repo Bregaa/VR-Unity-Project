@@ -49,7 +49,6 @@ public class LightsLeverOn : MonoBehaviour
             Vector3 voltArrowRotation = fuseBox.transform.Find("ArrowVolt").localRotation.eulerAngles;
             voltArrowRotation.y = (addedRotation - 60) * 0.75f;
             fuseBox.transform.Find("ArrowVolt").localRotation = Quaternion.Euler(voltArrowRotation);
-            Debug.Log(addedRotation);
 
 
             if (rotationX < 280 && rotationX > 40)

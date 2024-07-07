@@ -6,6 +6,8 @@ public class IntermittentLightFromSparks : MonoBehaviour
 {
     public new ParticleSystem particleSystem;
     public GameObject lampRack;
+    public GameObject monster;
+
     private int particlesCount;
     private int particlesCountPrevious;
 
@@ -24,7 +26,7 @@ public class IntermittentLightFromSparks : MonoBehaviour
 
     void Update()
     {
-        if(powerOn) {
+        if(powerOn && !monster.activeSelf) { //Disabled when the monster is visible, so when the shadow scary effect is being played
             particlesCountPrevious = particlesCount;
             particlesCount = particleSystem.particleCount;
             if (particlesCount < 20)
