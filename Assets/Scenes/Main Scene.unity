@@ -180,6 +180,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3de60c8e32dbfbf4d82f0d3e8c328780, type: 3}
+--- !u!4 &19042321 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 2554595325759988435, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+  m_PrefabInstance: {fileID: 1243876620}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &24624830 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3377540525056963332, guid: e935e90234cd90f44b686ce0e22fbbc0, type: 3}
@@ -5139,6 +5144,147 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: fea3b0fb23a96ef4dad4ee5f0bae84cd, type: 3}
   m_PrefabInstance: {fileID: 2141178814}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &947218897
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 947218898}
+  - component: {fileID: 947218899}
+  - component: {fileID: 947218900}
+  m_Layer: 0
+  m_Name: Monster growls
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &947218898
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947218897}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 28.9, y: 3.27, z: 20.2}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1271488706}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &947218899
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947218897}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 9ee78cea98e2a4148ab5ea309e00b77e, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.7
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 40
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!114 &947218900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 947218897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0bb456b1abc58ef42a00915492fe0f93, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &949455280
 GameObject:
   m_ObjectHideFlags: 0
@@ -11539,6 +11685,99 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4000010968662070, guid: 30b99e7dc1382e346a7f9789de00de5e, type: 3}
   m_PrefabInstance: {fileID: 256928079}
   m_PrefabAsset: {fileID: 0}
+--- !u!1001 &1243876620
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1271488706}
+    m_Modifications:
+    - target: {fileID: 521300850635015659, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: destroyOnTriggerEnter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 521300850635015659, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 521300850635015659, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 521300850635015659, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 947218900}
+    - target: {fileID: 521300850635015659, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 521300850635015659, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayMonsterDistantGrowls
+      objectReference: {fileID: 0}
+    - target: {fileID: 521300850635015659, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: PlayMonsterGrowls, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 521300850635015659, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: onTriggerEnter.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 1198257248343804775, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: m_Name
+      value: Trigger Zone
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554595325759988435, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 2.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554595325759988435, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.4861054
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554595325759988435, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -2.24
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554595325759988435, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554595325759988435, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554595325759988435, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554595325759988435, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554595325759988435, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554595325759988435, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2554595325759988435, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3910065197156780667, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dd79c922bf6d79f4783d959d1ec5071a, type: 3}
 --- !u!1 &1268636148
 GameObject:
   m_ObjectHideFlags: 0
@@ -11622,6 +11861,39 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1268636148}
   m_Mesh: {fileID: 8691780276856062721, guid: 9ebcf48312a575b4f93af9f24336bf91, type: 3}
+--- !u!1 &1271488705
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1271488706}
+  m_Layer: 0
+  m_Name: Monster distant noises
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1271488706
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1271488705}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0.69829035, z: 0, w: 0.7158147}
+  m_LocalPosition: {x: 46.7, y: -0.98610544, z: 39.25}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 19042321}
+  - {fileID: 947218898}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 88.58, z: 0}
 --- !u!4 &1274402690 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3377540525056963332, guid: e935e90234cd90f44b686ce0e22fbbc0, type: 3}
@@ -13865,7 +14137,7 @@ Transform:
   m_GameObject: {fileID: 1724420499}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0.38823944, z: 0, w: 0.92155856}
-  m_LocalPosition: {x: 68.5, y: 0, z: 41.5}
+  m_LocalPosition: {x: 37.55, y: 0, z: 36.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -20891,4 +21163,5 @@ SceneRoots:
   - {fileID: 1057125057}
   - {fileID: 458612485}
   - {fileID: 1418634960}
+  - {fileID: 1271488706}
   - {fileID: 386683796}
