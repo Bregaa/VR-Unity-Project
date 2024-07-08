@@ -70,6 +70,7 @@ public class LightsLeverOn : MonoBehaviour
                 fuseBox.transform.Find("Lamp 2 off").gameObject.SetActive(true);
 
                 //Turns on the lamps and plays the effects/noises
+                pilar2.transform.Find("Invisible Barrier").gameObject.SetActive(false);
                 turnOnLampPilar(pilar1);
                 turnOnLampPilar(pilar2);
                 turnOnLampPilar(pilar3);
