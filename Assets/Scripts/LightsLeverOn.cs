@@ -80,6 +80,9 @@ public class LightsLeverOn : MonoBehaviour
                 pilarLampRack.GetComponent<AudioSource>().Play();
                 GameObject pilarSparksOnCommand = pilar4.transform.Find("Sparks intermittent")?.gameObject;
                 pilarSparksOnCommand.SetActive(true);
+
+                GameObject.Find("4 - That's on").GetComponent<AudioSource>().Play();
+                GameObject.Find("Canvas").GetComponent<ChangeCanvasInstruction>().changeCanvasPanel();
             }
         }
     }

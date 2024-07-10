@@ -41,6 +41,7 @@ public class MonsterAttackLightening : StateMachineBehaviour
 
         animator.SetBool("MonsterRunAway", true);
         GameObject.Find("Monster attack").transform.Find("Monster").gameObject.transform.Find("Monster scream").gameObject.GetComponent<AudioSource>().Play();
+        GameObject.Find("9 - Ah2").gameObject.GetComponent<AudioSource>().Play();
 
         //Delay to deactivate the lightning
         animator.gameObject.GetComponent<MonoBehaviour>().StartCoroutine(DeactivateLightningAfterDelay());

@@ -6,7 +6,7 @@ using UnityEngine.Events;
 public class Trigger : MonoBehaviour
 {
     public string tagFilter;
-    public bool destroyOnTriggerEnter;
+    public bool disableOnTriggerEnter;
     public UnityEvent onTriggerEnter;
     public UnityEvent onTriggerExit;
 
@@ -15,7 +15,7 @@ public class Trigger : MonoBehaviour
     {
         if (!string.IsNullOrEmpty(tagFilter) && !other.gameObject.CompareTag(tagFilter)) return;
         onTriggerEnter.Invoke();
-        if(destroyOnTriggerEnter) Destroy(gameObject);
+        if(disableOnTriggerEnter) this.gameObject.GetComponent<BoxCollider>().enabled = false;
     }
 
     private void OnTriggerExit(Collider other)

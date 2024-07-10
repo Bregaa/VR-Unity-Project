@@ -52,6 +52,7 @@ public class MonsterShadowFlashingLightTrigger : MonoBehaviour
             ToggleLamp();
             float waitTime = Random.Range(minInterval, maxInterval);
             yield return new WaitForSeconds(waitTime);
+            GameObject.Find("6 - Ah").GetComponent<AudioSource>().Play();
         }
 
         endTime = endTime + lightOnDuration;
