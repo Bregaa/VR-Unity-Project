@@ -42,6 +42,7 @@ public class LightsLeverOn : MonoBehaviour
     {
         if ((!areLightsOn))
         {
+            //Moves the volt arrow
             rotationX = lever.transform.localRotation.eulerAngles.x;
             
             if (rotationX < 39) addedRotation = 38 - rotationX;
