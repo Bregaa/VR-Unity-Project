@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 483280}
   - component: {fileID: 3370830}
   - component: {fileID: 2373412}
+  - component: {fileID: 5477628086602325512}
   m_Layer: 0
   m_Name: Wood-10tier log_n
   m_TagString: Untagged
@@ -83,3 +84,24 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!65 &5477628086602325512
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173048}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.2089066, y: 1.6700729, z: 0.20890707}
+  m_Center: {x: -0.000015353417, y: 0.83504015, z: 0.0000015032524}
