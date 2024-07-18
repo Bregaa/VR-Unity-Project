@@ -2695,7 +2695,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &124529958
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4674,7 +4674,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &247785832
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4960,7 +4960,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &248143234
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6166,7 +6166,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &288221638
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9655,6 +9655,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 0.22418755, y: 0.18351363, z: 0.34110823}
   m_Center: {x: 0.0076398384, y: 0.071135744, z: 0.013344849}
+--- !u!1 &525178097 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1476034181315966, guid: f5853f9542928ed43b1b3be946bc02a2, type: 3}
+  m_PrefabInstance: {fileID: 797107861}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &529493665
 GameObject:
   m_ObjectHideFlags: 0
@@ -13990,6 +13995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 1417536632}
+  meat: {fileID: 736269808}
   animator: {fileID: 726491918}
 --- !u!195 &726491921
 NavMeshAgent:
@@ -14004,7 +14010,7 @@ NavMeshAgent:
   m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 300
   m_StoppingDistance: 3
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -14232,7 +14238,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &732604921
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14589,7 +14595,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!65 &736269814
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -14609,7 +14615,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 0.27678484, y: 0.052343935, z: 0.28616488}
+  m_Size: {x: 0.27678484, y: 0.1, z: 0.28616488}
   m_Center: {x: -0.0034307763, y: 0.027720243, z: -0.027861673}
 --- !u!1 &737499535 stripped
 GameObject:
@@ -15242,13 +15248,28 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1476034181315966, guid: f5853f9542928ed43b1b3be946bc02a2, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 797107866}
   m_SourcePrefab: {fileID: 100100000, guid: f5853f9542928ed43b1b3be946bc02a2, type: 3}
 --- !u!4 &797107862 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4147123440932752, guid: f5853f9542928ed43b1b3be946bc02a2, type: 3}
   m_PrefabInstance: {fileID: 797107861}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &797107866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 525178097}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e60ca56e9d4031479068fdc45883a6e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &799421126
 GameObject:
   m_ObjectHideFlags: 0
@@ -16197,7 +16218,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &841101640
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16483,7 +16504,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &842721487
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -18843,7 +18864,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &950494979
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -19712,7 +19733,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &972880350
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -26525,7 +26546,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &1053779744
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -30950,7 +30971,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &1351469954
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -35542,7 +35563,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4651524620516496215, guid: 288659769220f8a4a821ecf326b3d915, type: 3}
       propertyPath: m_Name
-      value: Meat1
+      value: Meat
       objectReference: {fileID: 0}
     - target: {fileID: 5460148715084761581, guid: 288659769220f8a4a821ecf326b3d915, type: 3}
       propertyPath: m_LocalPosition.x
@@ -36519,7 +36540,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &1660970053
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -37273,7 +37294,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &1697794401
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -38353,7 +38374,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 175852, guid: f8243bb353e5cb74481bb26fe62fd298, type: 3}
       propertyPath: m_Name
-      value: Wolf
+      value: WolfAgent
       objectReference: {fileID: 0}
     - target: {fileID: 477254, guid: f8243bb353e5cb74481bb26fe62fd298, type: 3}
       propertyPath: m_LocalScale.x
@@ -42442,7 +42463,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &2002198615
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -42760,7 +42781,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!135 &2005948319
 SphereCollider:
   m_ObjectHideFlags: 0
