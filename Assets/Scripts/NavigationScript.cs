@@ -10,6 +10,10 @@ public class NavigationScript : MonoBehaviour
     public Transform player;
     public Transform meat;
     public Animator animator;
+
+    public AudioSource breathingAudioSource;
+    public AudioSource angryAudioSource;
+
     private NavMeshAgent wolf;
     private gateController gateController;
 
@@ -56,6 +60,8 @@ public class NavigationScript : MonoBehaviour
                 gateIsOpened = true;
                 gateController.OpenGate();
             }
+            breathingAudioSource.enabled = true;
+            angryAudioSource.Stop();
         }
         else   // Otherwise if there is a navmesh position close (<5) to the player, move to the player
         {
