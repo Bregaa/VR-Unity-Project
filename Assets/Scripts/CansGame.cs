@@ -8,7 +8,6 @@ public class CansGame : MonoBehaviour
     public GameObject door;
     public void CansGameWin()
     {
-        Debug.Log("asd");
         door.GetComponent<BoxCollider>().enabled = false;
 
         door.transform.Find("Door").transform.Find("Knob").GetComponent<XRGrabInteractable>().enabled = true;
