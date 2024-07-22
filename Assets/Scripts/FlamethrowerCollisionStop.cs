@@ -35,6 +35,6 @@ public class FlamethrowerCollisionStop : StateMachineBehaviour
     //}
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        GameObject.Find("Flames area").GetComponent<BoxCollider>().enabled = false;
+        animator.gameObject.transform.Find("Flames area").GetComponent<BoxCollider>().enabled = false;
     }
 }
