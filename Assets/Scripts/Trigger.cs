@@ -13,8 +13,6 @@ public class Trigger : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Trigger");
-        Debug.Log(other.gameObject.tag);
         if (!string.IsNullOrEmpty(tagFilter) && !other.gameObject.CompareTag(tagFilter)) return;
         onTriggerEnter.Invoke();
         if(disableOnTriggerEnter) this.gameObject.GetComponent<BoxCollider>().enabled = false;
