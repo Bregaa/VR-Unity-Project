@@ -1,6 +1,10 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.AffordanceSystem.Receiver.Primitives;
+using UnityEngine.XR.Interaction.Toolkit.Inputs.Simulation;
 
 public class FlamethrowersGameController : MonoBehaviour
 {
@@ -26,6 +30,16 @@ public class FlamethrowersGameController : MonoBehaviour
     void Update()
     {
         
+    }
+    
+    public void startGame()
+    {
+        GameObject.Find("Third door").transform.Find("Door").localRotation = Quaternion.Euler(0, 0, 0);
+        GameObject.Find("XR Device Simulator").GetComponent<XRDeviceSimulator>().keyboardXTranslateSpeed = 0;
+        GameObject.Find("XR Device Simulator").GetComponent<XRDeviceSimulator>().keyboardYTranslateSpeed = 0;
+        GameObject.Find("XR Device Simulator").GetComponent<XRDeviceSimulator>().keyboardZTranslateSpeed = 0;
+        GameObject.Find("Move").GetComponent<ActionBasedContinuousMoveProvider>().enabled = false;
+        nextRound();
     }
 
     public void nextRound()
@@ -59,16 +73,27 @@ public class FlamethrowersGameController : MonoBehaviour
                 flamethrower3Animator.SetBool("flameThrowerActive", true);
                 break;
             case 10:
-                Debug.Log("You won");
+                GameObject.Find("XR Device Simulator").GetComponent<XRDeviceSimulator>().keyboardXTranslateSpeed = 0.5f;
+                GameObject.Find("XR Device Simulator").GetComponent<XRDeviceSimulator>().keyboardYTranslateSpeed = 0.5f;
+                GameObject.Find("XR Device Simulator").GetComponent<XRDeviceSimulator>().keyboardZTranslateSpeed = 0.5f;
+                GameObject.Find("Move").GetComponent<ActionBasedContinuousMoveProvider>().enabled = true;
+                PlayerPrefs.SetInt("PlayerWon", 2);
+                StartCoroutine(WaitAndLoadScene());
                 break;
-                //aggiungi cambio di scena
         }
     }
     public void gameLost()
     {
-        Debug.Log("You lost");
         GameObject.Find("Scream").GetComponent<AudioSource>().Play();
-        //wait di 2 secondi
-        //aggiungi cambio di scena
+
+        PlayerPrefs.SetInt("PlayerWon", 1);
+        StartCoroutine(WaitAndLoadScene());
+    }
+
+    private IEnumerator WaitAndLoadScene()
+    {
+        yield return new WaitForSeconds(4);
+
+        SceneManager.LoadScene("End Scene");
     }
 }
