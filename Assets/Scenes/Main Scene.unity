@@ -21913,7 +21913,7 @@ MonoBehaviour:
   m_ValidColorGradient:
     serializedVersion: 2
     key0: {r: 0.25845498, g: 0.38341045, b: 0.4528302, a: 1}
-    key1: {r: 0.25882354, g: 0.38431373, b: 0.45490196, a: 0.5882353}
+    key1: {r: 0.25882354, g: 0.38431373, b: 0.45490196, a: 0}
     key2: {r: 0.29803923, g: 0.40392157, b: 0.4627451, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -21943,8 +21943,8 @@ MonoBehaviour:
   m_InvalidColorGradient:
     serializedVersion: 2
     key0: {r: 0.4245283, g: 0.4245283, b: 0.4245283, a: 1}
-    key1: {r: 0.43137255, g: 0.41960785, b: 0.41960785, a: 0.5882353}
-    key2: {r: 0.43137255, g: 0.41960785, b: 0.41960785, a: 0.19607843}
+    key1: {r: 0.43137255, g: 0.41960785, b: 0.41960785, a: 0}
+    key2: {r: 0.43137255, g: 0.41960785, b: 0.41960785, a: 0}
     key3: {r: 0.43137255, g: 0.41960785, b: 0.41960785, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
     key5: {r: 0, g: 0, b: 0, a: 0}
@@ -21960,7 +21960,7 @@ MonoBehaviour:
     ctime7: 0
     atime0: 0
     atime1: 65535
-    atime2: 65535
+    atime2: 0
     atime3: 0
     atime4: 0
     atime5: 0
@@ -21973,7 +21973,7 @@ MonoBehaviour:
   m_BlockedColorGradient:
     serializedVersion: 2
     key0: {r: 0.4627451, g: 0.29803923, b: 0.30462307, a: 1}
-    key1: {r: 0.4627451, g: 0.29803923, b: 0.30588236, a: 0.5882353}
+    key1: {r: 0.4627451, g: 0.29803923, b: 0.30588236, a: 0}
     key2: {r: 0, g: 0, b: 0, a: 0}
     key3: {r: 0, g: 0, b: 0, a: 0}
     key4: {r: 0, g: 0, b: 0, a: 0}
@@ -22009,7 +22009,7 @@ MonoBehaviour:
   m_StopLineAtFirstRaycastHit: 1
   m_StopLineAtSelection: 0
   m_SnapEndpointIfAvailable: 1
-  m_LineBendRatio: 0.5
+  m_LineBendRatio: 0.7
   m_OverrideInteractorLineOrigin: 1
   m_LineOriginTransform: {fileID: 0}
   m_LineOriginOffset: 0
