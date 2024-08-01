@@ -1,5 +1,8 @@
 # Unity VR Project
-  
+
+## Walkthrough Video
+[Watch the walkthrough video on youtube!](https://youtu.be/7GUOh9UAUyA)
+
 ## Start scene
 ![image](readme%20images/image.png)
 The initial scene shows a simple UI that contains instructions about the game and a play button, set within a forest environment similar to the one in the game.
